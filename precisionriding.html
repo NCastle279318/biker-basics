@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <!-- Custom CSS & JS -->
+    <link rel="stylesheet" href="main.css">
+    <script src="index.js"></script>
+    <title>Precision Riding - Biker Basics Motorcycle Academy</title>
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("include-html");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
+                }
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div include-html="navbar.html"></div>
+    <!-- Navbar End -->
+
+    <!-- Content -->
+    <div class="container my-container">
+        <hr class="hr-custom">
+        <div class="row align-items-center my-row">
+            <div class="col-md-12 col-sm-6 my-col">
+                <h2 class="headings2"><strong>Precision Riding</strong></h2>
+            </div>
+        </div>
+        <hr class="hr-custom">
+        <hr class="hr-invisible">
+        <div class="my-container2">
+            <div class="row my-row">
+                <div class="col-md-4 col-sm-5 my-col">
+                    <img src="images/image079.jpg" width="440" height="auto">
+                </div>
+                <div class="col-md-6 col-sm-6 my-col">
+                    <p class="para-custom3"><strong>Course duration : Indeterminate - The course is open and runs every week.</strong></p>
+                    <p class="para-custom3">Riders who join this program do so as an ongoing commitment to improving their precision riding skill. The bulk of this course content consists of practising the skills acquired to achieve the desired exercise outcome in each week.</p>
+                    <p class="para-custom3">This is the course for the rider who has mastered handling skills and is comfortable with slow riding technique.</p>
+                    <p class="para-custom3">It seeks to develop and enhance the slow riding techniques required to help you keep the chosen formation as part of a motorcycle display or motorcycle drill team.</p>
+                </div>
+                <div class="row my-row">
+                    <div class="col-md-11 col-sm-6 my-col">
+                        <p class="para-custom4">The objective of this course is to prepare the rider for the thrilling world of display or drill team riding as seen performed by police riders the world over.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="hr-invisible">
+        <div class="row my-row">
+            <div class="col-md-3 col-sm-5 my-col">
+                <img src="images/image080.jpg" width="262" height="auto">
+            </div>
+            <div class="col-md-3 col-sm-5 my-col">
+                <img src="images/image081.jpg" width="262" height="auto">
+            </div>
+            <div class="col-md-3 col-sm-5 my-col">
+                <img src="images/image082.jpg" width="262" height="auto">
+            </div>
+            <div class="col-md-3 col-sm-5 my-col">
+                <img src="images/image083.jpg" width="262" height="auto">
+            </div>
+        </div>
+        <hr class="hr-invisible">
+        <div class="row my-row">
+            <div class="col-md-11 col-sm-6 my-col">
+                <p class="para-custom">This course comprises various techniques employed to maintain pace, dressage and position in close quarter formation riding. It improves on balance and focus and allows the graduate to participate in public riding skill demonstrations
+                    and displays.</p>
+                <p class="para-custom">This includes four abreast and four deep boox formations with turns and angular crossovers, eights and cavalry turns, rolling linear slaloms and head-on crossover manoeuvres among a host of other exercises. This is for the rider who enjoys
+                    a challenge.</p>
+            </div>
+        </div>
+        <hr class="hr-invisible">
+        <div class="row my-row">
+            <div class="col-md-3 col-sm-5 my-col">
+                <img src="images/image084.jpg" width="262" height="auto">
+            </div>
+            <div class="col-md-3 col-sm-5 my-col">
+                <img src="images/image085.jpg" width="262" height="auto">
+            </div>
+            <div class="col-md-3 col-sm-5 my-col">
+                <img src="images/image086.jpg" width="262" height="auto">
+            </div>
+            <div class="col-md-3 col-sm-5 my-col">
+                <img src="images/image087.jpg" width="262" height="auto">
+            </div>
+        </div>
+        <hr class="hr-custom">
+    </div>
+    <!-- Content -->
+
+    <!-- Footer Start -->
+    <div include-html="footer.html"></div>
+    <!-- Footer End -->
+
+    <!-- Optional JavaScript -->
+    <!-- JQuery first, then Popper.js, then Bootsrtap JS -->
+    <script>
+        includeHTML();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0000000000.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html>

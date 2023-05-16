@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <!-- Custom CSS & JS -->
+    <link rel="stylesheet" href="main.css">
+    <script src="index.js"></script>
+    <title>Novice Rider - Biker Basics Motorcycle Academy</title>
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("include-html");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
+                }
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div include-html="navbar.html"></div>
+    <!-- Navbar End -->
+
+    <!-- Content -->
+    <div class="container my-container">
+        <hr class="hr-custom">
+        <div class="row align-items-center my-row">
+            <div class="col-md-12 col-sm-6 my-col">
+                <h2 class="headings2"><strong>Novice Rider</strong></h2>
+            </div>
+        </div>
+        <hr class="hr-custom">
+        <div class="row my-row">
+            <div class="col-md-6 col-sm-6 my-col">
+                <p class="para-custom2"><strong>Course Duration is generally 9 to 12 hours</strong> but time frame often varies from person to person. (Some can complete this in 4 hrs some can't in 40hrs)</p>
+                <p class="para-custom2">This is a course covering both theory and practical aspects of safely riding a motorcycle. It takes the absolute beginner through the transition from only ever having ridden a bicycle before to riding a fully manual motorcycle.</p>
+                <p class="para-custom2">Lessons are generally provided on smaller 125cc,150cc and 200 cc engined machines. Gearboxes of these machines are 5-speed Acyclic. In this course you as an absolute beginner with no experience at all will learn how to start the motorcycle
+                    and move off safely.</p>
+            </div>
+            <div class="col-md-5 col-sm-6 my-col">
+                <img src="images/image021.jpg" width="455" height="auto">
+            </div>
+        </div>
+        <hr class="hr-invisible">
+        <div class="row my-row">
+            <div class="col-md-3 col-sm-6 my-col">
+                <img src="images/image022.jpg" width="261" height="auto">
+            </div>
+            <div class="col-md-3 col-sm-6 my-col">
+                <img src="images/image023.jpg" width="261" height="auto">
+            </div>
+            <div class="col-md-3 col-sm-6 my-col">
+                <img src="images/image024.jpg" width="261" height="auto">
+            </div>
+            <div class="col-md-3 col-sm-6 my-col">
+                <img src="images/image025.jpg" width="261" height="auto">
+            </div>
+        </div>
+        <hr class="hr-invisible">
+        <div class="row align-items-center my-row">
+            <div class="col-md-11 col-sm-6 my-col">
+                <p class="para-custom">You will learn to steer the machine under power and you will learn to stop it safely. You will be taught how to make left and right turns and how to change gears. Correct clutch control and braking application is developed in this course
+                    to ensure that you understand how the machine works and which controls produce the desired outcomes. Instruction is strictly one on one and the instructor will give you his undivided attention throughout.</p>
+            </div>
+        </div>
+        <hr class="hr-custom">
+    </div>
+    <!-- Content -->
+
+    <!-- Footer Start -->
+    <div include-html="footer.html"></div>
+    <!-- Footer End -->
+
+    <!-- Optional JavaScript -->
+    <!-- JQuery first, then Popper.js, then Bootsrtap JS -->
+    <script>
+        includeHTML();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0000000000.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html>

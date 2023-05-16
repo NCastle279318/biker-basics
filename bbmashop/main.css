@@ -1,0 +1,91 @@
+.layout-top-nav {
+    background-color: #212429;
+}
+
+.register-page {
+    background-color: #212429;
+}
+
+.login-page {
+    background-color: #212429;
+}
+
+.register-box-body {
+    background-color: #0041FF;
+}
+
+.login-box-body {
+    background-color: #0041FF;
+}
+
+.content {
+    background-color: #212429;
+}
+
+.content-wrapper {
+    background-color: #212429;
+}
+
+.main-footer {
+    background-color: #0041FF;
+}
+
+.custom-font1 {
+    color: white;
+    text-shadow: 1px 1px 4px #000000;
+}
+
+.headings1 {
+    color: white;
+}
+
+.btn-custom {
+    background-color: #002FBD;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-shadow: 1px 1px 4px #000000;
+}
+
+.btn-custom2 {
+    background-color: #002FBD;
+    color: white;
+}
+
+.btn-custom3 {
+    background-color: #212429;
+    color: white;
+}
+
+.word-wrap {
+    overflow-wrap: break-word;
+}
+
+.prod-body {
+    height: 300px;
+}
+
+.box:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.register-box {
+    margin-top: 20px;
+}
+
+#trending {
+    list-style: none;
+    padding: 10px 5px 10px 15px;
+}
+
+#trending li {
+    padding-left: 1.3em;
+}
+
+#trending li:before {
+    content: "\f046";
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em;
+    width: 1.3em;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <!-- Custom CSS & JS -->
+    <link rel="stylesheet" href="main.css">
+    <script src="index.js"></script>
+    <title>About Us - Biker Basics Motorcycle Academy</title>
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("include-html");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
+                }
+            }
+        };
+    </script>
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <div include-html="navbar.html"></div>
+    <!-- Navbar End -->
+
+    <!-- Content Start -->
+    <div class="container my-container">
+        <hr class="hr-custom">
+        <div class="row align-items-center my-row">
+            <div class="col-md-6 col-sm-6 my-col">
+                <h2 class="headings1"><strong>OUR HISTORY</strong></h2>
+                <p class="para-custom">Created at the turn of the Century by avid motorcyclist and former Traffic Officer, Lloyd Castle, the goal of the Academy is to provide motorcycle rider training in the form of Basic to Advanced level motorcycle handling and survival skills,
+                    of the kind employed by motorcycle police officers the world over, to the ever growing civilian motorcycle population.</p>
+                <p class="para-custom">The Academy opened its doors to its first civilian student rider back in 2001, prior to which these skills were exclusively taught to traffic and police motorcyclists and it has now trained literally thousands of riders since.</p>
+                <p class="para-custom">We have taught rider survival skills to riders who now enjoy motorcycling with the reduced risk that rider competence developed through proper training and practice allows.</p>
+            </div>
+            <div class="col-md-5 col-sm-6 my-col">
+                <img src="images/image004.png" width="435" height="auto">
+            </div>
+        </div>
+        <hr class="hr-invisible">
+        <div class="row align-items-center my-row">
+            <div class="col-md-4 col-sm-6 my-col">
+                <img src="images/image005.png" width="435" height="auto">
+            </div>
+            <div class="col-md-6 col-sm-6 my-col">
+                <h2 class="headings1"><strong>OUR MOTIVATION</strong></h2>
+                <p class="para-custom">First hand experience of the carnage caused by untrained and ill-prepared riders gained from almost two decades of attending to collision scenes made it clear that law enforcement alone would not reduce the needless suffering.</p>
+                <p class="para-custom">It was clear that until formal motorcycle training was introduced to the general motorcycling population, many more would fall victim to their own lack of skill and inexperience.</p>
+                <p class="para-custom">The Academy was founded on meeting this need for structured formal motorcycle training and set out to provide the training required for survival.</p>
+            </div>
+        </div>
+        <hr class="hr-invisible">
+        <div class="row align-items-center my-row">
+            <div class="col-md-6 col-sm-6 my-col">
+                <h2 class="headings1"><strong>OUR STAFF & CREDENTIALS</strong></h2>
+                <p class="para-custom"><strong>Lloyd Castle</strong>, a former trainer of Traffic Officers, with two decades of traffic safety and policing experience under his belt having served as a motorcycle officer on various specialised units has trained countless members
+                    of an array of law enforcement agencies since 1989. </p>
+                <p class="para-custom">Experience as a motorcycle patrol officer, a Presidential and VIP Motorcycle Escort as well as many years of experience in Collision Investigation and Reconstruction coupled with the insights gained from years of aerial observation of
+                    traffic movement and conflicts as a helicopter cop ensures that he is well qualified to teach the skills required to keep you safe.</p>
+            </div>
+            <div class="col-md-5 col-sm-6 my-col">
+                <img src="images/image006.png" width="435" height="auto">
+            </div>
+        </div>
+        <hr class="hr-invisible">
+        <div class="row align-items-center my-row">
+            <div class="col-md-11 col-sm-6 my-col">
+                <p class="para-custom">He has to his credit almost forty years of all-weather motorcycle riding experience. He is known in Western Cape formal biking circles as the producer and presenter of the Bike Safety Feature of the Biker Show on Bush Radio 89.5 Fm from
+                    2012 to 2014, where he discussed motorcycle safety, traffic law and defensive riding principles live on air. He went on to become the host of the Biker Show along with Ruth, his wife, who produced the show until 2019. </p>
+            </div>
+        </div>
+        <hr class="hr-invisible">
+        <div class="row align-items-center my-row">
+            <div class="col-md-5 col-sm-6 my-col">
+                <img src="images/image007.png" width="435" height="auto">
+            </div>
+            <div class="col-md-6 col-sm-6 my-col">
+                <p class="para-custom"><strong>Lyle Castle who joins us part-time</strong> has more than thirty years of practical motorcycle riding experience. Since riding his first fully manual motorcycle at the tender age of eight years old, he has ridden virtually everything
+                    on two wheels since. His riding ability shows the depth of understanding of the vehicle dynamics of motorcycles he possesses.</p>
+                <p class="para-custom">His understated competence and quiet confidence, patience and evident ability to teach others allows you to come to that understanding too. He has more than 15 years practical experience as a motorcycle instructor for which he holds appropriate
+                    Certification.
+                </p>
+            </div>
+        </div>
+        <hr class="hr-invisible">
+        <div class="row align-items-center my-row">
+            <div class="col-md-6 col-sm-6 my-col">
+                <p class="para-custom"><strong>Ruth Castle</strong> is the administrative head of the Academy. She runs the day to day administration of the enterprise and ensures that everything runs as it should.</p>
+                <p class="para-custom">Client Relations and Business Management is her department. She is the voice you engage with when you call us. She sets up your bookings and allocates the resources you need. Ruth is a fully licenced rider in her own right and will be
+                    happy to share her knowledge with you.</p>
+                <p class="para-custom">Chat with her about all our courses or just get some advice, make a booking or discuss bikes or protective clothing and what is available in the market place in general.</p>
+            </div>
+            <div class="col-md-5 col-sm-6 my-col">
+                <img src="images/image008.png" width="435" height="auto">
+            </div>
+        </div>
+        <hr class="hr-invisible">
+        <div class="row align-items-center my-row">
+            <div class="col-md-11 col-sm-6 my-col">
+                <h2 class="headings1"><strong>FURTHER RELATED QUALIFICATIONS</strong></h2>
+                <p class="para-custom">In addition to being a qualified Traffic Officer, holding the Final Diploma of the Institute of Traffic officers of SA, he is also a Traffic Police trained Forensic Collision Investigator and Reconstructionist. He is Dept of Transport
+                    Certified as a driving instructor for more than one class of vehicle.</p>
+                <p class="para-custom">He holds official Traffic Police Certification as an Advanced Motorcycle and Patrol Car operator. He is a qualified and Dept of Transport certified examiner for driving licences from Light to Extra-Heavy vehicles. He is a trainer of Driving
+                    Instructors for various Driver Education Programmes and has been a Training Officer in the Cape Town Traffic College. He is a former In-Service Training Officer of operational Traffic Officers in various disciplines. He is qualified
+                    in Emergency Aid and holds several related Traffic Law and Law Enforcement qualifications.</p>
+                <p class="para-custom">All of the Academy staff members are fully licenced motorcyclists holding unrestricted Code A licences and between them they boast in excess of 50 years of all-weather practical motorcycle riding experience. In addition they have a collective
+                    training experience in excess of thirty years as instructors and teachers.</p>
+            </div>
+        </div>
+        <hr class="hr-custom">
+    </div>
+    <!-- Content End -->
+
+    <!-- Footer Start -->
+    <div include-html="footer.html"></div>
+    <!-- Footer End -->
+
+    <!-- Optional JavaScript -->
+    <!-- JQuery first, then Popper.js, then Bootsrtap JS -->
+    <script>
+        includeHTML();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0000000000.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <!-- Custom CSS & JS -->
+    <link rel="stylesheet" href="main.css">
+    <script src="index.js"></script>
+    <title>Admission Requirements - Biker Basics Motorcycle Academy</title>
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("include-html");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
+                }
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div include-html="navbar.html"></div>
+    <!-- Navbar End -->
+
+    <!-- Content -->
+    <div class="container my-container">
+        <hr class="hr-custom">
+        <div class="row align-items-center my-row">
+            <div class="col-md-12 col-sm-6 my-col">
+                <h2 class="headings2"><strong>Admission Requirements</strong></h2>
+            </div>
+        </div>
+        <hr class="hr-custom">
+        <hr class="hr-invisible">
+        <div class="row align-items-center my-row">
+            <div class="col-md-6 col-sm-6 my-col">
+                <p class="para-custom2"><strong>Learners Licence Preparation Class: You must be at least 16 years or older.</strong></p>
+                <p class="para-custom2"><strong>The Learners Licence you will apply for is a Code 1 licence which specifically applies to motorcycles.</strong></p>
+                <p class="para-custom2">All persons who intend to take the K53 motorcycle test will write the same test regardless of whether you intend getting the Code A1 or Code A licence and regardless of age as long as you are older than 16 years.</p>
+                <p class="para-custom2"><strong>Licence Codes and Requirements : Code A1</strong></p>
+                <p class="para-custom2">The Code "A1" rider licence can be obtained at the age of 16 years and allows the holder to ride motorcycle or scooter with an engine capacity not exceeding 125 cc.</p>
+                <p class="para-custom2">If you use a bike or scooter with an automatic or semi-automatic gearbox to take the practical test then you will be restricted to riding a vehicle with that type of gearbox and your licence will be endorsed accordingly.</p>
+                <p class="para-custom2">If you take and pass the test on a vehicle with a manual gearbox then you will have no restriction and can operate vehicles with manual, automatic and semi-automatic gearboxes provided they do not exceed an engine capacity of 125cc.</p>
+            </div>
+            <div class="col-md-4 col-sm-6 my-col">
+                <img src="images/image009.jpg" width="340" height="auto">
+            </div>
+        </div>
+        <hr class="hr-invisible">
+        <hr class="hr-invisible">
+        <hr class="hr-invisible">
+        <div class="row my-row">
+            <div class="col-md-3 col-sm-6 my-col">
+                <p class="para-custom2"><strong>Licence Codes and Requirements: Code A - Open</strong></p>
+                <p class="para-custom2"><strong>The Code "A" licence.</strong> You have to be at least 18 years old or older to be allowed to ride a bike or scooter with an engine capacity exceeding 125cc and to take this licence test.</p>
+            </div>
+            <div class="col-md-4 col-sm-6 my-col" id="image88">
+                <img src="images/image010.jpg" width="300" height="auto">
+            </div>
+            <div class="col-md-3 col-sm-6 my-col">
+                <p class="para-custom2"><strong>NOTE :</strong> If you take the test on a machine with an automatic or semi-automatic gearbox, your licence will restrict you to only riding machines with such gearboxes.</p>
+                <p class="para-custom2">Passing the Code A test on a machine with a manual gearbox means your licence allows the use of any motorcycle.</p>
+            </div>
+        </div>
+        <hr class="hr-invisible">
+        <hr class="hr-invisible">
+        <hr class="hr-invisible">
+        <div class="row my-row">
+            <div class="col-md-4 col-sm-6 my-col">
+                <img src="images/image011.png" width="360" height="auto">
+            </div>
+            <div class="col-md-3 col-sm-6 my-col">
+                <p class="para-custom2"><strong>Beginner/Novice</strong></p>
+                <p class="para-custom2">You must have a valid Code 1 learners licence. (your learner's licence will have to be produced at each lesson)</p>
+                <p class="para-custom2">You must in addition have the ability to ride a bicycle.</p>
+                <p class="para-custom2">If you meet these criteria you may be admitted to the Beginner/Novice Course.</p>
+            </div>
+            <div class="col-md-4 col-sm-6 my-col">
+                <img src="images/image12.png" width="360" height="auto">
+            </div>
+        </div>
+        <hr class="hr-invisible">
+        <hr class="hr-invisible">
+        <div class="row my-row">
+            <div class="col-md-11 col-sm-6 my-col">
+                <p class="para-custom2"><strong>Basic Handling Skills:</strong> Admission to the Novice course automatically includes this segment. Should you already have the skills taught in the Novice Course then this segment may be taken on its own. You should have a Code
+                    1 learners licence as a minimum.</p>
+                <p class="para-custom2"><strong>K53 Test Preparation:</strong> Must have valid code 1 learners licence. Must be able to ride manual, semi auto or fully automatic motorcycle or scooter. Must have successfully completed evaluation for competence at Novice Course
+                    or Basic Handling Skills level to be admitted to this course.</p>
+            </div>
+        </div>
+        <div class="row my-row">
+            <div class="col-md-12 col-sm-6 my-col">
+                <img src="images/image013.png" width="900" height="auto">
+            </div>
+        </div>
+        <hr class="hr-invisible">
+        <div class="row my-row">
+            <div class="col-md-11 col-sm-6 my-col">
+                <p class="para-custom2"><strong>Basic Road Skills :</strong> Must have successfully completed the Novice Course, the Basic Handling Skills Course, the K53 Course or our competence evaluation to gain admission to this Course.</p>
+                <p class="para-custom2"><strong>Beyond the Basics :</strong> Must have successfully completed any of our basic courses including k53 Preparation hold a code 1 learners or code A or A1 drivers licence and/or satisfy the requirements of our competence evaluation
+                    to gain admission to this course.This is a group training exercise and several riders may participate at the same time. You will need your own bike and helmet.</p>
+                <p class="para-custom2"><strong>Rider Proficiency :</strong> Must have successfully completed any of our basic, (including k53 test preparation), intermediate or advanced level courses, hold a code 1 learners or code A or A1 drivers licence and/or satisfy the
+                    requirements of our competence evaluation to gain admission to this course.This is a group training exercise and several riders may participate at the same time. You will need your own bike and helmet.</p>
+            </div>
+        </div>
+        <hr class="hr-invisible">
+        <div class="row my-row">
+            <div class="col-md-3 col-sm-6 my-col">
+                <p class="para-custom2"><strong>Intermediate Handling Skills :</strong> Must have successfully completed the Basic Handling Skills and/or Basic Road Craft Courses or our competence evaluation to gain admission to this course. Can hold a learner's license as a
+                    minimum legal requirement.
+                    <strong>Note :</strong> Only riders holding a full motorcycle license will be allowed to complete the pillion segment of this course.</p>
+            </div>
+            <div class="col-md-8 col-sm-6 my-col">
+                <img src="images/image014.png" width="750" height="auto">
+            </div>
+        </div>
+        <hr class="hr-invisible">
+        <div class="row my-row">
+            <div class="col-md-11 col-sm-6 my-col">
+                <p class="para-custom2"><strong>Please Note :</strong> All courses after the K53 test preparation course will require the use of your own motorcycle and helmet. Should you not be able to provide these we can provide a helmet and motorcycle or your use at additional
+                    cost to you.</p>
+                <p class="para-custom2"><strong>Intermediate Road Skills :</strong> Must have successfully completed the Intermediate Handling Skills Course or our competence evaluation to gain admission to this course. Here we recommend that you present yourself for training
+                    with the motorcycle you intend to ride. If you cannot do so we could provide a machine at your additional cost by prior arrangement.</p>
+                <p class="para-custom2"><strong>Advanced Handling Skills :</strong> Must have successfully completed the Intermediate Road Craft Course or our competence evaluation to gain admission to this course. We recommend that you present yourself for training with the
+                    motorcycle you intend to ride. You will need to get accustomed to your own bike to derive real benefit from this one.</p>
+                <p class="para-custom2"><strong>Advanced Road Skills :</strong> Must have successfully completed the Advanced Handling Skills Course or our competence evaluation.<br><strong>We strongly urge the use of the bike you intend to ride or your own machine for this course.
+                </strong></p>
+                <p class="para-custom2"><strong>NOTE : Each motorcycle training course preceding this is a progression from the previous training level. We will not enrol you on any course unless you meet the competencies required for that level of training or you have successfully
+                    completed the required preceding training level.</strong></p>
+                <p class="para-custom2"><strong>Precision Riding :</strong> You need to have above average vehicle handling, balance and control skills to be admitted to this course. Those who have passed intermediate /advanced level handling skills courses will gain automatic
+                    access to enrolment. Those who have not completed those courses will need to pass our competency evaluation to gain entry.</p>
+                <p class="para-custom2"><strong>Returning Rider :</strong> You will need to be in possession of a valid motorcycle driver's licence and have your own bike to be admitted to this course.</p>
+                <p class="para-custom2"><strong>New Bike Orientation:</strong> You will need to be in possession of a valid motorcycle driver's licence and provide the bike you wish to get familiar with to be admitted to this course. Company delivery riders requiring an introduction
+                    to the company vehicle are welcome to enrol on this course.</p>
+                <p class="para-custom2"><strong>Defensive Riding:</strong> This course is open to all riders regardless of experience level. You will however require a valid learners licence or drivers licence and your own bike and helmet for the practical sections of the programme.</p>
+                <p class="para-custom2"><strong>Escort/Marshal Course :</strong> This course is open to all licenced riders and is essential for all Club Safety Officers/Road Captains, Police/Traffic Officers and/or persons providing or responsible for event and convoy marshalling/management
+                    services. All participating Riders will have to provide their own bikes and helmets.</p>
+            </div>
+        </div>
+        <hr class="hr-custom">
+    </div>
+    <!-- Content -->
+
+    <!-- Footer Start -->
+    <div include-html="footer.html"></div>
+    <!-- Footer End -->
+
+    <!-- Optional JavaScript -->
+    <!-- JQuery first, then Popper.js, then Bootsrtap JS -->
+    <script>
+        includeHTML();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0000000000.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html>

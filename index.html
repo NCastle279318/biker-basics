@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <!-- Custom CSS & JS -->
+    <link rel="stylesheet" href="main.css">
+    <script src="index.js"></script>
+    <title>Biker Basics Motorcycle Academy</title>
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("include-html");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
+                }
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div include-html="navbar.html"></div>
+    <!-- Navbar End -->
+
+    <!-- Content -->
+    <div class="container my-container">
+        <hr class="hr-custom">
+        <div class="row my-row">
+            <div class="col-md-12 col-sm-6 my-col">
+                <h2 class="headings1"><strong>WELCOME TO <br>BIKER BASICS MOTORCYCLE ACADEMY</strong></h2>
+            </div>
+        </div>
+        <div class="row align-items-center my-row">
+            <div class="col-md-6 col-sm-6 my-col">
+                <p class="para-custom">Biker Basics motorcycle Academy is a family run motorcycle rider training school based in Cape Town South Africa. Together we have a collective all-weather riding experience in excess of 50 years between us to place at your disposal. We
+                    teach basic, intermediate and advanced level riding skills to riders of just about any kind of motorised two-wheeled vehicle available.</p>
+                <p class="para-custom">We specialise in getting absolute beginners to enjoy riding and we strive to ensure that both competence and confidence are increased with each and every lesson.</p>
+                <p class="para-custom">We never stop learning new techniques which we continually pass on to our learners at all levels of instruction to ensure that our learners remain safe through the development of competence and skill. Whatever you aspire to ride,we have
+                    a program for you and look forward to seeing you in one or more of our courses soon.</p>
+            </div>
+            <div class="col-md-4 col-sm-6 my-col">
+                <img src="images/image001.png" width="330" height="auto">
+            </div>
+        </div>
+        <hr class="hr-invisible">
+        <div class="row align-content-center my-row2">
+            <div class="col-md-2 col-sm-4 my-col"></div>
+            <div class="col-md-2 col-sm-4 my-col"></div>
+            <div class="col-md-2 col-sm-4 my-col">
+                <h2 class="headings1">
+                    <strong>Check out our store!</strong>
+                </h2>
+            </div>
+            <div class="col-md-2 col-sm-4 my-col">
+                <a class="btn btn-primary" href="bbmashop/index.php" role="button" id="shopbtn">
+                    <strong>SHOP NOW</strong>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-4 my-col"></div>
+            <div class="col-md-2 col-sm-4 my-col"></div>
+        </div>
+        <hr class="hr-invisible">
+        <div class="row align-items-center my-row">
+            <div class="col-md-4 col-sm-6 my-col">
+                <img src="images/image002.png" width="390" height="auto">
+            </div>
+            <div class="col-md-7 col-sm-6 my-col">
+                <div class="div-custom">
+                    <h2 class="headings1"><strong>OUR PHILOSOPHY<br>Develop rider skill to promote and enhance rider safety.</strong></h2>
+                    <hr class="hr-invisible">
+                    <p class="para-custom"><strong>We believe that learning to ride a motorcycle correctly, competently and safely is far more important than just getting you to pass the K53 motorcycle test.</strong></p>
+                    <p class="para-custom"><strong>Safety through knowledge is what we strive to instill in every rider.</strong></p>
+                    <p class="para-custom"><strong>We believe that obtaining the drivers licence should be a by-product of being able to effectively control the machine you are seated astride. We believe that riding skill should be developed to ensure rider safety as a priority.</strong></p>
+                </div>
+            </div>
+        </div>
+        <hr class="hr-invisible">
+        <div class="row align-items-center my-row">
+            <div class="col-md-11 col-sm-6 my-col">
+                <p class="para-custom">Attaining your motorcycle licence we believe is just the first tentative step on the path of learning to be bike safe and road savvy. It is the start of a new adventure on two wheels not the end of one. Your real learning starts once you
+                    attain your licence and head into traffic in earnest. We would like to help you to survive it!</p>
+                <p class="para-custom">We believe that everyone should learn to ride like his/her life depends on it......<br>because IT DOES!</p>
+                <p>
+                    <h2 class="headings1"><strong>EVERY COLLISION IS PREVENTABLE</strong></h2>
+                </p>
+                <p class="para-custom">We believe everyone should have the survival skills of a professional motorcyclist, able to handle whatever the road network and the elements may throw at you. Remember that every rider who is injured or killed on our roads is a preventable
+                    injury or death. That prevention starts with developing those survival skills through proper rider training designed to reduce motorcycle related tragedies.</p>
+                <p class="para-custom">Invest in your future…get meaningful professional rider training today.</p>
+                <p>
+                    <h2 class="headings1"><strong>ONLY YOU ARE RESPONSIBLE FOR YOUR SAFETY!</strong></h2>
+                </p>
+            </div>
+        </div>
+        <hr class="hr-custom">
+    </div>
+    <!-- Content -->
+
+    <!-- Footer Start -->
+    <div include-html="footer.html"></div>
+    <!-- Footer End -->
+
+    <!-- Scripts -->
+    <script>
+        includeHTML();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0000000000.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html>
